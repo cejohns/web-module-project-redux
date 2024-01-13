@@ -9,9 +9,15 @@ import App from './components/App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 
+// Create a Redux store holding the state of your app.
+// Its API is { subscribe, dispatch, getState }.
+const store = createStore(reducer);
+
 ReactDOM.render(
-  <Router>
+  <Provider store={store}>
+    <Router>
       <App />
-  </Router>,
+    </Router>
+  </Provider>,
   document.getElementById('root')
 );
