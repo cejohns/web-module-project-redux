@@ -1,8 +1,6 @@
 
+import {  TOGGLE_DISPLAY_FAVORITES, ADD_FAVORITE, REMOVE_FAVORITE } from '../actions/favoritesActions';
 
-export const ADD_FAVORITE = "ADD_FAVORITE";
-export const REMOVE_FAVORITE = "REMOVE_FAVORITE";
-export const TOGGLE_DISPLAY_FAVORITES = "TOGGLE_DISPLAY_FAVORITES";
 
 // Initial state
 const initialState = {
